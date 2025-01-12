@@ -1,0 +1,32 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,64,64)
+  { TextLabel1 TextLabel
+    MoveScaled(10,7,25,3)
+    Text = ("Muzica preferata")
+  }
+  { CheckBox1 CheckBox
+    MoveScaled(10,12,16,4)
+    Text = ("Rock")
+  }
+  { CheckBox2 CheckBox
+    MoveScaled(10,16,16,4)
+    Text = ("Clasica")
+  }
+  { CheckBox3 CheckBox
+    MoveScaled(10,20,16,4)
+    Text = ("Jazz")
+  }
+  { CheckBox4 CheckBox
+    MoveScaled(10,24,16,4)
+    Text = ("Populara")
+  }
+  { Button1 Button
+    MoveScaled(10,31,16,4)
+    Text = ("Ce muzica asculti?")
+  }
+  { TextArea1 TextArea
+    MoveScaled(10,37,32,4)
+  }
+}

@@ -1,0 +1,16 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,30,51)
+  { btnDial Button
+    MoveScaled(5,13,9,4)
+    Text = ("Dial")
+  }
+  { btnClose Button
+    MoveScaled(15,13,9,4)
+    Text = ("Close")
+  }
+  { tbNumber TextBox
+    MoveScaled(5,6,19,4)
+  }
+}

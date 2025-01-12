@@ -1,0 +1,26 @@
+' Gambas class file
+
+
+Public Sub Quit_Click()
+
+  Quit
+
+End
+
+Public Sub TextLabel1_MouseDown()
+
+  
+
+End
+
+Public Sub Hello_Click()
+
+  Message.Info("Hello World !")
+
+End
+
+Public Sub Label1_MouseDown()
+
+  
+
+End

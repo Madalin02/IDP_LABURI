@@ -1,0 +1,9 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,64,64)
+  { PictureBox1 PictureBox
+    MoveScaled(10,9,43,43)
+    Picture = Picture.Load("minge.png")
+  }
+}

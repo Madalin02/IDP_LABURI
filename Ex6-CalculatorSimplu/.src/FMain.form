@@ -1,0 +1,30 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,64,64)
+  { SpinBox1 SpinBox
+    MoveScaled(6,8,9,4)
+  }
+  { SpinBox2 SpinBox
+    MoveScaled(6,20,9,4)
+  }
+  { Operator_Adunare Button
+    MoveScaled(36,20,16,4)
+    Text = ("PLUS")
+  }
+  { Operator_Scadere Button
+    MoveScaled(36,26,16,4)
+    Text = ("MINUS")
+  }
+  { Operator_Inmultire Button
+    MoveScaled(36,32,16,4)
+    Text = ("INMULTIT")
+  }
+  { Operator_Impartire Button
+    MoveScaled(36,38,16,4)
+    Text = ("IMPARTIT")
+  }
+  { Rezultat TextBox
+    MoveScaled(6,35,16,4)
+  }
+}

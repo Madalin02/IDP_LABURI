@@ -1,0 +1,24 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,64,64)
+  { SpinBox1 SpinBox
+    MoveScaled(10,25,9,4)
+  }
+  { SpinBox2 SpinBox
+    MoveScaled(30,25,9,4)
+  }
+  { Button1 Button
+    MoveScaled(43,25,16,4)
+    Text = ("Compara")
+  }
+  { TextLabel1 TextLabel
+    MoveScaled(10,15,48,3)
+    Text = ("Comparatie cu IF .. THEN .. ELSE si mesaje!")
+  }
+  { TextLabel2 TextLabel
+    MoveScaled(21,26,7,3)
+    Text = (">=")
+    Alignment = Align.Center
+  }
+}

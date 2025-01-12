@@ -1,0 +1,40 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,64,64)
+  { lblPatrulater TextLabel
+    MoveScaled(13,12,36,6)
+    Background = Color.DarkCyan
+    Text = ("Medii si instrumente de programare")
+    Alignment = Align.Center
+  }
+  { ToggleButton ToggleButton
+    MoveScaled(5,21,22,4)
+    Text = ("Background/Foreground")
+  }
+  { cmdQuit Button
+    MoveScaled(36,21,16,4)
+    Text = ("Quit")
+  }
+  { LabelRosu TextLabel
+    MoveScaled(6,30,11,3)
+    Text = ("Rosu47")
+  }
+  { LabelVerde TextLabel
+    MoveScaled(6,38,11,3)
+    Text = ("Verde170")
+  }
+  { LabelAlbastru TextLabel
+    MoveScaled(6,47,11,3)
+    Text = ("Albastru17")
+  }
+  { ScrollBarRosu Slider
+    MoveScaled(22,30,34,4)
+  }
+  { ScrollBarVerde Slider
+    MoveScaled(22,37,34,4)
+  }
+  { ScrollBarAlbastru Slider
+    MoveScaled(22,45,34,4)
+  }
+}

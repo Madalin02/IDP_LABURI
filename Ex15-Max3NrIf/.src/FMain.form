@@ -1,0 +1,29 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,64,64)
+  { Button1 Button
+    MoveScaled(10,16,16,4)
+    Text = ("Calcul")
+  }
+  { TextLabel1 TextLabel
+    MoveScaled(10,24,20,3)
+    Text = ("Maximul a trei numere:")
+  }
+  { ValueBox1 ValueBox
+    MoveScaled(10,10,13,4)
+    Alignment = Align.Right
+  }
+  { ValueBox2 ValueBox
+    MoveScaled(25,10,13,4)
+    Alignment = Align.Right
+  }
+  { ValueBox3 ValueBox
+    MoveScaled(39,10,13,4)
+    Alignment = Align.Right
+  }
+  { ValueBox4 ValueBox
+    MoveScaled(37,23,15,4)
+    Alignment = Align.Right
+  }
+}

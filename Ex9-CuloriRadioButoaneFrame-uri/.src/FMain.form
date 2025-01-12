@@ -1,0 +1,42 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,64,64)
+  { optSus Frame
+    MoveScaled(4,5,24,24)
+    Text = ("Culori")
+    { optRosu RadioButton
+      MoveScaled(1,3,16,4)
+      Text = ("Rosu")
+    }
+    { optGalben RadioButton
+      MoveScaled(1,7,16,4)
+      Text = ("Galben")
+    }
+  }
+  { optJos Frame
+    MoveScaled(4,36,24,24)
+    Text = ("Pozitii")
+  }
+  { TextArea1 TextArea
+    MoveScaled(38,10,16,16)
+    Text = ("Am scris ceva")
+  }
+  { optAlbastru RadioButton
+    MoveScaled(5,16,16,4)
+    Text = ("Albastru")
+    Value = True
+  }
+  { optVerde RadioButton
+    MoveScaled(5,20,16,4)
+    Text = ("Verde")
+  }
+  { RadioButton5 RadioButton
+    MoveScaled(5,39,16,4)
+    Text = ("Sus")
+  }
+  { RadioButton6 RadioButton
+    MoveScaled(5,43,16,4)
+    Text = ("Jos")
+  }
+}

@@ -1,0 +1,15 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,64,64)
+  { TextLabel1 TextLabel
+    MoveScaled(20,13,8,3)
+    Text = ("A cat-a zi?")
+  }
+  { SpinBox1 SpinBox
+    MoveScaled(29,12,5,4)
+  }
+  { TextBox1 TextBox
+    MoveScaled(16,34,25,4)
+  }
+}

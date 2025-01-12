@@ -1,0 +1,24 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,64,64)
+  { Nume_Interlocutor TextBox
+    MoveScaled(23,20,20,4)
+    Text = (" ")
+    Alignment = Align.Center
+  }
+  { Button1 Button
+    MoveScaled(25,26,16,4)
+    Text = ("Salut")
+  }
+  { Nume TextLabel
+    MoveScaled(28,33,17,3)
+  }
+  { Raspuns TextLabel
+    MoveScaled(3,33,24,3)
+  }
+  { TextLabel1 TextLabel
+    MoveScaled(4,21,19,3)
+    Text = ("Scrie-ti numele aici")
+  }
+}

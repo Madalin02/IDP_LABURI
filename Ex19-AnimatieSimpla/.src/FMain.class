@@ -1,0 +1,18 @@
+' Gambas class file
+
+Public i As Integer = 1
+Public WaitPLS As Boolean = False
+Public Sub _new()
+End
+Public Sub Form_Open()
+PictureBox1.Picture = Picture["AnimFrame" & (i Mod 5 + 1) & ".png"]
+End
+Public Sub PictureBox1_MouseMove()
+If WaitPLS Then Return
+WaitPLS = True
+i += 1
+PictureBox1.Picture = Picture["AnimFrame" & (i Mod 5 + 1) & ".png"]
+Wait 0.1
+PictureBox1.Show
+WaitPLS = False
+End

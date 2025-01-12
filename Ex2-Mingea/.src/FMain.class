@@ -1,0 +1,24 @@
+' Gambas class file
+
+Public unghi As Float
+Public xc As Float
+Public yc As Float
+Public raza As Float
+'Public Pi As Float
+Public alfa As Float
+
+Public Sub Form_Open()
+unghi = 0
+xc = 50
+yc = 50
+raza = 30
+' Pi = 3.14159
+PictureBox1_MouseDown()
+End
+
+Public Sub PictureBox1_MouseDown()
+unghi = unghi + 1
+alfa = unghi / 180 * Pi
+PictureBox1.X = xc + raza * Cos(alfa)
+PictureBox1.Y = yc + raza * Sin(alfa)
+End

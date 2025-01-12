@@ -1,0 +1,17 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,64,64)
+  { Label1 TextLabel
+    MoveScaled(17,16,34,3)
+    Text = ("Welcome abord fighter pilot!")
+  }
+  { ToggleButton1 ToggleButton
+    MoveScaled(12,30,16,4)
+    Text = ("Engine 1")
+  }
+  { ToggleButton2 ToggleButton
+    MoveScaled(36,30,16,4)
+    Text = ("Engine 2")
+  }
+}

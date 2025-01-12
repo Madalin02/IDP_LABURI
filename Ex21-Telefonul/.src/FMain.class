@@ -1,0 +1,77 @@
+' Gambas class file
+
+Private aButtons[13] As Button
+' Declarăm vectorul de controale.
+Public Sub Form_Open()
+Dim i As Integer
+btnClose.Tooltip = ("Quit")
+Me.Center
+For i = 1 To 12
+aButtons[i] = New Button(Me) As
+"Buttongroup"
+' Crearea unui nou buton adăugat la vector
+' și adăugarea sa la un grup de butoane care
+' vor avea în comun o anumită acțiune.
+With aButtons[i]
+.X = (i - Int((i - 1) / 3) * 3) * 60 - 30
+.Y = Int((i - 1) / 3) * 60 + 170
+.Width = 42
+.Height = 42
+.Font.Grade = 5
+If i = 10 Then
+.Text = "*"
+Else If i = 11 Then
+.Text = "0"
+Else If i = 12 Then
+.Text = "#"
+Else
+.Text = i
+Endif
+End With
+Next
+End
+
+Public Sub Buttongroup_Click()
+' Acest eveniment poate proveni de la oricare dintre butoanele aflate în grupul Buttongroup.
+' Indiferent pe care se apasă, va fi apelat acest cod.
+  tbNumber.Text = tbNumber.Text & Last.Text
+' Este posibil să cunoaștem exact care buton a fost apăsat deoarece există Last, care are
+' întotdeauna ca valoare exact controlul ultim folosit.
+' Last.Text va indica cifra sau simbolul de pe ultima tastă apăsată.
+End
+
+Public Sub Buttongroup_Menu()
+' Un alt eveniment care poate avea loc asupra butoanelor din grup: Click dreapta !
+  Message.Info(Subst(("You have clicked the button &1"), Last.Text))
+End
+Public Sub btnClose_Click()
+  If tbNumber.Text = "" Then
+    Me.btnClose
+  Else
+    tbNumber.Text = ""
+  Endif
+End
+Public Sub Form_KeyPress()
+  If Key.code = Key.Esc Then Me.btnClose
+End
+Public Sub tbNumber_Change()
+  If tbNumber.Text = "" Then
+    btnClose.Tooltip = ("Quit")
+  Else
+    btnClose.Tooltip = ("Clear")
+  Endif
+End
+
+Public Sub btnDial_Click()
+  If tbNumber.Text = "" Then
+    Message.Warning(("Nu am nici un număr pe care să îl formez!"))
+  Else
+    Message.Info(("Formez numărul... ") & tbNumber.Text)
+  Endif
+End
+
+Public Sub tbNumber_KeyPress()
+
+  
+
+End

@@ -1,0 +1,25 @@
+' Gambas class file
+
+Static Public Anterior As String = ""
+Public Sub _new()
+End
+Public Sub Form_Open()
+End
+
+Public Sub PuneInLista_Click()
+' În Visual Basic se adăugau elemente la listă cu AdItem(). În Gambas este mai simplu: Add().
+' iar paranteza funcției/metodei este obligatorie !!!
+
+  If Anterior = ElementNou.Text Then
+  Else
+    Condimente.Add(ElementNou.Text)
+    Anterior = ElementNou.Text
+Endif
+  ' Nu uitați o regulă a programării ghidate de evenimente:
+  ' Dacă evenimentul s-a produs deja și a fost prelucrat deja
+  ' NU mai este nevoie să-l mai procesăm o dată.
+End
+Public Sub Transfer_Click()
+  'Elementul ALES dintre elementele ListBox-ul Condimente este Condimente.Text. Pur si simplu!
+  Ciorba.Add(Condimente.Text)
+End

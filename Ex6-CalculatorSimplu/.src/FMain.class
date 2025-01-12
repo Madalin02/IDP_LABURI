@@ -1,0 +1,22 @@
+' Gambas class file
+
+
+Public Sub Operator_Adunare_Click()
+  Rezultat.Text = Str$(SpinBox2.Value + SpinBox1.Value)
+End
+
+Public Sub Operator_Scadere_Click()
+  Rezultat.Text = Str$(SpinBox1.Value - SpinBox2.Value)
+End
+
+Public Sub Operator_Inmultire_Click()
+  Rezultat.Text = Str$(SpinBox1.Value * SpinBox2.Value)
+End
+
+Public Sub Operator_Impartire_Click()
+  If SpinBox2.Value <> 0
+    Rezultat.Text = Str$(SpinBox1.Value / SpinBox2.Value)
+  Else 
+    Rezultat.Text = "Div 0!"
+  Endif
+End

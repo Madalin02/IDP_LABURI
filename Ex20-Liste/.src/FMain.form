@@ -1,0 +1,23 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,64,64)
+  { PuneinLista Button
+    MoveScaled(43,6,16,4)
+    Text = ("PuneinLista")
+  }
+  { ElementNou TextBox
+    MoveScaled(10,6,32,4)
+    Text = ("ElementNou")
+  }
+  { Condimente ListBox
+    MoveScaled(11,16,16,31)
+  }
+  { Ciorba ListBox
+    MoveScaled(38,16,16,31)
+  }
+  { Transfer Button
+    MoveScaled(28,28,9,4)
+    Text = ("Transfer")
+  }
+}

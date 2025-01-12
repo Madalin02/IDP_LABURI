@@ -1,0 +1,28 @@
+' Gambas class file
+
+Public Sub _new()
+End
+Public Sub Form_Open()
+End
+
+Public Sub Button1_Click()
+Dim i As String
+Dim Genuri As New Collection
+'Dim Gen As String
+' Variabila i de tip String
+' Vectorul/Colecția numita Genuri
+' Variabila nefolosita.
+Genuri["Rock"] = Rock.Value
+Genuri["Clasica"] = CheckBox2.Value
+Genuri["Jazz"] = Jazz.Value
+Genuri["Populara"] = Populara.Value
+'Extrag date din câmpurile formei
+'Si le pun în colecție.
+TextBox1.Text = "Tu asculți "
+' Pot fi mai multe 'Rock','Clasica','Jazz','Populara','Bluess'
+' Atenție: Stringurile se scriu cu ghilimele duble !
+'
+For Each i In ["Rock", "Clasica", "Jazz", "Populara"]
+If Genuri[i] <> 0 Then TextBox1.Text = TextBox1.Text & i & " "
+Next
+End
